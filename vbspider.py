@@ -7,8 +7,9 @@ def main(argv):
 		for file in f:
 			if file.endswith(".vbs"):
 				vbFile = open(os.path.join(r, file))
-				print(r)
 				print(file)
+				linesInVBFile = vbFile.readlines()
+				
 	
 if __name__ == "__main__":
 	main(sys.argv[1:])
